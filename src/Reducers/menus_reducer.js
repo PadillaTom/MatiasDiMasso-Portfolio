@@ -2,10 +2,10 @@ import {SIDEBAR_OPEN, SIDEBAR_CLOSE} from "../Context/actions"
 
 const menus_reducer = (state, action) => {
     // *** Sidebar ***
-    if (action.type == SIDEBAR_OPEN){
+    if (action.type === SIDEBAR_OPEN){
         return {...state, isSidebarOpen: true}
     }
-    if (action.type == SIDEBAR_CLOSE){
+    if (action.type === SIDEBAR_CLOSE){
         return {...state, isSidebarOpen: false}
     }
 
