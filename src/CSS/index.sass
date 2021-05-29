@@ -1,0 +1,61 @@
+// =========
+//  Queries
+// =========
+@import "include-media.scss"
+// How to use:
+// @include media (">=phone" , "<=desktop")
+// 'phone': 375px,
+// 'tablet': 768px,
+// 'laptop': 992px,
+// 'desktop': 1250px,
+// 'LGdesktop': 1920px,
+
+// =========
+//  Fonts
+// =========
+
+
+
+// =========
+//  Variables
+// =========
+// *** Colors ***
+// *** Font Colors ***
+// *** Fonts ***
+// *** Others ***
+
+// =========
+//  Globals
+// =========
+#root
+    max-width: 100vw
+    overflow-x: hidden
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+html
+    max-width: 100vw
+    background-color: cyan
+ul 
+  list-style: none
+a 
+    text-decoration: none
+    color: inherit
+button 
+    border: none
+    outline: none
+    background: transparent
+
+// =========
+//  Fonts
+// =========
+
+html
+    background: red
+    @include media (">=tablet")
+        background: purple
+    @include media (">=laptop")
+        background: crimson
+    @include media (">=desktop")
+        background: green

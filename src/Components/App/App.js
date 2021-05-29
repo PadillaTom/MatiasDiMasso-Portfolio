@@ -6,8 +6,7 @@ import {Homepage} from "../../Pages"
 
 function App() {
   return (
-    <div className="App">
-      Mati Di Masso
+    <div className="App">      
       <Homepage></Homepage>
     </div>
   );
