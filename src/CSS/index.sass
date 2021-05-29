@@ -13,15 +13,18 @@
 // =========
 //  Fonts
 // =========
-
-
+@import url("https://use.typekit.net/nnl3ofe.css")
 
 // =========
 //  Variables
 // =========
 // *** Colors ***
+$ColorBgWhite: #f4f4f4
+$ColorWhite: #fff
 // *** Font Colors ***
+$ColorFontBlack: #0d0d0f
 // *** Fonts ***
+$FontMain: "aktiv-grotesk-extended", sans-serif
 // *** Others ***
 
 // =========
@@ -29,16 +32,16 @@
 // =========
 #root
     max-width: 100vw
-    overflow-x: hidden
+    overflow-x: hidden    
 * 
     margin: 0
     padding: 0
     box-sizing: border-box
 html
     max-width: 100vw
-    background-color: cyan
+    background-color: $ColorBgWhite
 ul 
-  list-style: none
+    list-style: none
 a 
     text-decoration: none
     color: inherit
@@ -47,15 +50,46 @@ button
     outline: none
     background: transparent
 
-// =========
-//  Fonts
-// =========
+// Section
+.section
+    width: 100%
 
-html
-    background: red
-    @include media (">=tablet")
-        background: purple
-    @include media (">=laptop")
-        background: crimson
-    @include media (">=desktop")
-        background: green
+// ==================
+//  *** MAIN APP ***
+// ==================
+
+// *** Homepage ***
+.homepage-sect
+    width: 100%
+    height: 100vh
+    position: relative    
+    margin: 0 auto
+    
+.homepage-img
+    position: absolute
+    top: 5em
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: right top
+    object-position: 50% 
+    opacity: 0.4    
+
+.homepage-text-container    
+    position: absolute
+    top: 35%
+    left: 60%
+    transform: translate(-50%, -50%)
+    z-index: 2
+    width: 100%
+    h2
+        font-family: $FontMain
+        font-size: 1.8rem
+        font-weight: 700        
+
+// *** Homepage ***
+// *** Homepage ***
+// *** Homepage ***
+// *** Homepage ***
+
