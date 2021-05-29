@@ -17,7 +17,7 @@ const Navbar = () => {
             {/* Mobile */}
             <div className="mobileMenu-container">
                 <div className="mobileMenu-center">
-                    <Link to="/" className="logo-container">
+                    <Link to="/" className="logo-container" onClick={closeSidebar}>
                         <img src={Logo} alt="Matias Di Masso Logo" />
                     </Link>
                     {
