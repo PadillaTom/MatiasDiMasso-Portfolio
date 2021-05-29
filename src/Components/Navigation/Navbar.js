@@ -13,6 +13,7 @@ const Navbar = () => {
     
     return (
         <nav className="navigation">
+
             {/* Mobile */}
             <div className="mobileMenu-container">
                 <div className="mobileMenu-center">
@@ -28,7 +29,9 @@ const Navbar = () => {
                     }
                 </div>
             </div>
+
             {/* Desktop */}
+            
         </nav>
     )
 }

@@ -2,7 +2,7 @@ import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 // Components:
-import {Navbar} from "../Navigation"
+import {Navbar, Sidebar} from "../Navigation"
 
 // Pages:
 import {Homepage, Error, About, Work, ForFun} from "../../Pages"
@@ -12,6 +12,7 @@ function App() {
     <div className="App">      
       <Router>
         <Navbar></Navbar>
+        <Sidebar></Sidebar>
         <Switch>
           <Route path="/" exact>
             <Homepage></Homepage>
